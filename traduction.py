@@ -1,76 +1,76 @@
-
 print("Attention : ce logiciel de traduction est BETA, ne mettez pas de majuscule. Si un mot s'affiche en français dans la traduction, c'est qu'il n'éxiste pas dans la bibliothèque de traduction")
 traductions = {
     # I - Articles
-    "le": "A", "la": "A", "les": "A", "l'": "A",
-    "un": "Ó", "une": "Ó",
+    "le": "a", "la": "a", "les": "a", "l'": "a",
+    "un": "ó", "une": "ó",
     
     # II - Conjonctions et prépositions
-    "de": "Tu", "des": "Tu", 
-    "du": "Tua", "de la": "Tua", "des": "Tua",
-    "et": "Í",
-    "ce": "Su", "cet": "Su", "cette": "Su", "ces": "Su", "c'": "Su",
+    "de": "tu", "des": "tu", 
+    "du": "tua", "de la": "tua", "des": "tua",
+    "et": "í",
+    "ce": "su", "cet": "su", "cette": "su", "ces": "su", "c'": "su",
     
     # III - Adjectifs possessifs
-    "mon": "Maí", "ma": "Maí", "mes": "Maí",
-    "ton": "Daí", "ta": "Daí", "tes": "Daí",
-    "son": "Saí", "sa": "Saí", "ses": "Saí",
-    "notre": "Nadru", "nos": "Nadru",
-    "votre": "Vadru", "vos": "Vadru",
-    "leur": "Lur", "leurs": "Lur",
+    "mon": "maí", "ma": "maí", "mes": "maí",
+    "ton": "daí", "ta": "daí", "tes": "daí",
+    "son": "saí", "sa": "saí", "ses": "saí",
+    "notre": "nadru", "nos": "nadru",
+    "votre": "vadru", "vos": "vadru",
+    "leur": "lur", "leurs": "lur",
     
     # IV - Prépositions
-    "à": "O", "au": "Ona", "à la": "Ona", "aux": "Ona",
-    "pour": "Pér", "par": "Por", "que": "Chu", "quoi": "Chu", "qui": "Che",
-    "en": "Oí", "dans": "Toí",
-    "sur": "Sór", "sous": "Séu", "sans": "Soí",
+    "à": "o", "au": "ona", "à la": "ona", "aux": "ona",
+    "pour": "pér", "par": "por", "que": "chu", "quoi": "chu", "qui": "che",
+    "en": "oí", "dans": "toí",
+    "sur": "sór", "sous": "séu", "sans": "soí",
     
     # V - Couleurs
-    "rouge": "Rédun", "rouges": "Rédun",
-    "orange": "Aroigun", "oranges": "Aroigun",
-    "vert": "Virdun", "verte": "Virdun", "verts": "Virdun", "vertes": "Virdun",
-    "noir": "Naurun", "noirs": "Naurun", "noire": "Naurun", "noires": "Naurun",
-    "bleu": "Blun", "bleue": "Blun", "bleus": "Blun", "bleues": "Blun",
-    "violet": "Vhalíun", "violette": "Vhalíun", "violets": "Vhalíun", "violettes": "Vhalíun",
-    "marron": "Moraíun", "marrons": "Moraíun",
-    "blanc": "Bloighun", "blanche": "Bloighun", "blancs": "Bloighun", "blanches": "Bloighun",
-    "turquoise": "Dórchausun", "turquoises": "Dórchausun",
-    "jaune": "Ganun", "jaunes": "Ganun",
+    "rouge": "rédun", "rouges": "rédun",
+    "orange": "aroigun", "oranges": "aroigun",
+    "vert": "virdun", "verte": "virdun", "verts": "virdun", "vertes": "virdun",
+    "noir": "naurun", "noirs": "naurun", "noire": "naurun", "noires": "naurun",
+    "bleu": "blun", "bleue": "blun", "bleus": "blun", "bleues": "blun",
+    "violet": "vhalíun", "violette": "vhalíun", "violets": "vhalíun", "violettes": "vhalíun",
+    "marron": "moraíun", "marrons": "moraíun",
+    "blanc": "bloighun", "blanche": "bloighun", "blancs": "bloighun", "blanches": "bloighun",
+    "turquoise": "dórchausun", "turquoises": "dórchausun",
+    "jaune": "ganun", "jaunes": "ganun",
     
     # VI - Adjectifs émotionnels
-    "heureux": "Yurun", "heureuse": "Yurun", "heureuses": "Yurun",
-    "triste": "Dredhun", "tristes": "Dredhun",
-    "content": "Chaidoíun", "contente": "Chaidoíun", "contents": "Chaidoíun", "contentes": "Chaidoíun",
-    "colérique": "Chalirechun", "colériques": "Chalirechun",
-    "embarrassé": "Oiborosíun", "embarrassée": "Oiborosíun", "embarrassés": "Oiborosíun", "embarrassées": "Oiborosíun",
-    "timide": "Demetun", "timides": "Demetun",
+    "heureux": "yurun", "heureuse": "yurun", "heureuses": "yurun",
+    "triste": "dredhun", "tristes": "dredhun",
+    "content": "chaidoíun", "contente": "chaidoíun", "contents": "chaidoíun", "contentes": "chaidoíun",
+    "colérique": "chalirechun", "colériques": "chalirechun",
+    "embarrassé": "oiborosíun", "embarrassée": "oiborosíun", "embarrassés": "oiborosíun", "embarrassées": "oiborosíun",
+    "timide": "demetun", "timides": "demetun",
     
     # VII - Bases
-    "bonjour": "Gérbhán", 
-    "au revoir": "Oruvauhim",
-    "s'il te plaît": "Se h-el pliren dau", "s'il vous plaît": "Se h-el pliren véu",
-    "merci": "Mirse",
-    "oui": "Ées", "non": "Naí", "ne ... pas": "Naí",
-    "à bientôt": "O bháda",
-    "à demain": "Ona tumá", "à plus tard": "O plós dortun",
+    "bonjour": "gérbhán", 
+    "au revoir": "oruvauhim",
+    "s'il te plaît": "se h-el pliren dau", "s'il vous plaît": "se h-el pliren véu",
+    "merci": "mirse",
+    "oui": "ées", "non": "naí", "ne ... pas": "naí",
+    "à bientôt": "o bháda",
+    "à demain": "ona tumá", "à plus tard": "o plós dortun",
     
     # VIII - Jours de la semaine
-    "lundi": "Lóngér", "mardi": "Morgér", "mercredi": "Mirchrugér", 
-    "jeudi": "Gugér", "vendredi": "Voitrugér", 
-    "samedi": "Somgér", "dimanche": "Salihugér",
+    "lundi": "lóngér", "mardi": "morgér", "mercredi": "mirchrugér", 
+    "jeudi": "gugér", "vendredi": "voitrugér", 
+    "samedi": "somgér", "dimanche": "salihugér",
     
     # IX - Mois et saisons
-    "janvier": "Goivhir", "février": "Fivrehir", "mars": "Mors", "avril": "Ovrel", "mai": "Mihu", 
-    "juin": "Góhá", "juillet": "Góehí", "août": "Éd", "septembre": "Sipudoibru", "octobre": "Achdabru", 
-    "novembre": "Navoibru", "décembre": "Tisoibru",
-    "printemps": "Prádoipsu", "été": "Idí", "automne": "Adan", "hiver": "Evir",
+    "janvier": "goivhir", "février": "fivrehir", "mars": "mors", "avril": "ovrel", "mai": "mihu", 
+    "juin": "góhá", "juillet": "góehí", "août": "éd", "septembre": "sipudoibru", "octobre": "achdabru", 
+    "novembre": "navoibru", "décembre": "tisoibru",
+    "printemps": "prádoipsu", "été": "idí", "automne": "adan", "hiver": "evir",
     
     # X - Numéros
-    "un": "Ón", "deux": "Tus", "trois": "Draus", "quatre": "Chodru", "cinq": "Sách", "six": "Ses", 
-    "sept": "Sid", "huit": "Óed", "neuf": "Nuf", "dix": "Tes", "onze": "Aisu", "douze": "Tés", 
-    "treize": "Dris", "quatorze": "Chodars", "quinze": "Chás", "seize": "Setes", 
-    "dix-sept": "Sides", "dix-huit": "Óedes", "dix-neuf": "Nuftes", "vingt": "Vá"
+    "un": "ón", "deux": "tus", "trois": "draus", "quatre": "chodru", "cinq": "sách", "six": "ses", 
+    "sept": "sid", "huit": "óed", "neuf": "nuf", "dix": "tes", "onze": "aisu", "douze": "tés", 
+    "treize": "dris", "quatorze": "chodars", "quinze": "chás", "seize": "setes", 
+    "dix-sept": "sides", "dix-huit": "óedes", "dix-neuf": "nuftes", "vingt": "vá"
 }
+
 
 # Demander les mots en français
 mot1 = input("Quel est le premier mot en français ? ")
